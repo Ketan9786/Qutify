@@ -1,0 +1,35 @@
+.search-from {
+  display: flex;
+  min-width: 570px;
+  border-radius: 8px;
+  border: 1px solid #121212;
+  background: #fff;
+}
+
+.search-from input {
+  flex: 1;
+  border-radius: 8px 0px 0px 8px;
+  padding: 8px;
+  width: 66px;
+  height: 48px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -ms-border-radius: 8px 0px 0px 8px;
+  -o-border-radius: 8px 0px 0px 8px;
+  border: 1px solid #121212;
+
+
+}
+
+.search-from button {
+  display: flex;
+  width: 66px;
+  height: 48px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #121212;
+  background: #fff;
+  padding: 8px;
+}
