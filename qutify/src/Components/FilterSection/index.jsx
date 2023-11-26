@@ -2,7 +2,7 @@ import Carousel from "../Carousel";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-export default ({ albumName, data, filter,executeFilter }) => {
+export default ({ albumName, data, filter,executeFilter,navId }) => {
 
   const [selectedTab, setSectedTab] = useState(0);
   return (
@@ -25,7 +25,7 @@ export default ({ albumName, data, filter,executeFilter }) => {
         </Tabs>
       </div>
       <div style={{marginTop:"20px"}}>
-      <Carousel data={data} />
+      <Carousel data={data} navId='filter'/>
       </div>
      
     </div>

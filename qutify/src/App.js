@@ -42,8 +42,8 @@ function App() {
     <div className='app'>
       <Navbar/>
       <HeroSection/>
-      <GridCardSection albumName={"Top Album"} data={topAlbum}/>
-      <GridCardSection albumName={"New Album"} data={newAlbum}/>
+      <GridCardSection navId="ta" albumName={"Top Album"} data={topAlbum}/>
+      <GridCardSection navId="na" albumName={"New Album"} data={newAlbum}/>
       <FilterSection albumName={"Songs"} data={filterSongs} filter={genres}
       executeFilter={(genres)=>{
           if(genres ==="all"){

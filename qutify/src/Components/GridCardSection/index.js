@@ -2,7 +2,7 @@ import { useState } from "react";
 import Cards from "../Cards";
 import "./GridCardSection.css";
 import Carousel from "../Carousel";
-export default ({albumName,data}) => {
+export default ({albumName,data,navId}) => {
 console.log(data,"dd")
 const [isCollapsed,setIsCollapsed]=useState(true);
     return (
@@ -13,7 +13,7 @@ const [isCollapsed,setIsCollapsed]=useState(true);
             </div>
 
             {
-                isCollapsed ? <Carousel data={data}/>:(  <div className="card-container">
+                isCollapsed ? <Carousel data={data} navId={navId}/>:(  <div className="card-container">
                 {data.map((item)=>{
                
                return(<Cards 
