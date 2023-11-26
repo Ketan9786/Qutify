@@ -1,0 +1,7 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--css-black);
+    row-gap: 10px;
+}

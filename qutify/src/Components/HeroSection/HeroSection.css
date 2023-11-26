@@ -1,21 +1,18 @@
-.HeroSection {
+.hs-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  gap: 30px;
+  background-color: var(--css-black);
 }
-.HeroSection h4 {
-    color: #fff;
-    text-align: center;
-    font-family: 'Poppins', sans-serif; /* Make sure to include a fallback font */
-    font-size: 2.5vw; /* Adjust the font size to your preference */
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-.HeroSection img {
-  width: 112px;
-  height: 112px;
-  flex-shrink: 0;
+.hs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--css-white);
+  gap: 10px;
+}
+.hs-img-frame {
+  width: 212px;
+  height: 212px;
 }
