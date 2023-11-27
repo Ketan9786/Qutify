@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,6 +36,8 @@ export default ({ data, navId }) => {
                 title={item.title}
                 follow={item.follows}
                 imgUrl={item.image}
+                totalSongs={item.songs ? item.songs.length : "This is singel track"}
+
               />
             </SwiperSlide>
           );
